@@ -1,0 +1,87 @@
+.presentation-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-bottom: 7%;
+      margin-top: 15%;
+      align-items: flex-start;
+  }
+
+  .greeting {
+    font-size: 7.5rem;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .name {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #e4b2ff;
+    margin: 10px 0;
+  }
+  
+  .description {
+    font-size: 2.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 700px;
+
+  }
+  
+  
+  .modern-button {
+    background: rgba(230, 230, 230, .466);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: 2px solid transparent;
+    display: inline-block;
+  }
+  
+  
+  .modern-button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .modern-button:active {
+    transform: translateY(4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .modern-button:focus {
+    outline: none;
+  }
+  
+  .social-links {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 40px; /* Añade espacio entre los elementos */
+  }
+  
+  .social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center; /* Alinea los iconos con el texto */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #e4b2ff;
+  }
+  
+  .social-icon i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+  }

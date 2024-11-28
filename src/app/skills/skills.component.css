@@ -1,0 +1,36 @@
+.presentation-container{
+    width: 90vh;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100vh;
+  }
+  
+  .skill-card {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom right, #1a1a29, rgba(27, 27, 40, 0));
+  }
+  
+  .skill-card img {
+    width: 40px;  /* Ajusta el tamaño del ícono */
+    height: 40px; /* Ajusta el tamaño del ícono */
+    margin-bottom: 10px;
+  }
+  
+  .skill-card p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

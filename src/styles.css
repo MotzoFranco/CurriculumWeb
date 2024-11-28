@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    overflow: auto; /* Permite desplazamiento si el contenido excede la altura de la ventana */
+}
+
+p{
+    line-height: 25px;
+    font-size: 1.3rem;
+}
+.breathing-light {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background: radial-gradient(circle at 120% center, rgba(32, 0, 211, 0.3), transparent);
+    animation: breathing 3s infinite ease-in-out;
+    pointer-events: none;
+}
+
+/* Personalización de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+    height: 12px; /* Altura de la barra de desplazamiento horizontal */
+  }
+  
+  /* Estilo para la pista (el área donde se mueve la barra) */
+  ::-webkit-scrollbar-track {
+    background: #000; /* Fondo negro para la pista */
+    border-radius: 10px;
+  }
+  
+  /* Estilo para el pulgar (la parte que se mueve) */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #6e2e8f, #5bacff); /* Gradiente de negro a violeta */
+    border-radius: 10px;
+  }
+  
+  /* Opcional: Personalizar el pulgar en estado hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5bacff; /* Cambia el color a violeta cuando el usuario pasa el ratón */
+  }
+
+  
+@keyframes breathing {
+    0%, 100% {
+        opacity: 0.5; 
+    }
+    50% {
+        opacity: 1;
+    }
+}
+

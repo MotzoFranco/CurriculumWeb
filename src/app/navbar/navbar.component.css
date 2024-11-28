@@ -1,0 +1,38 @@
+.navbar {
+    width: 150vh; /* Ajusta el porcentaje del ancho del navbar */
+    height: 4vh;
+    max-width: 1500px; /* Máximo tamaño del navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, #1a1a29, rgba(27, 27, 40, 0));
+    border: 1px solid #e2e2e207;
+    backdrop-filter: blur(10px); /* Efecto vidriado */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con navegadores */
+    border-radius: 50px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-inline: 80px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #e0e0e0;
+}

@@ -1,0 +1,7 @@
+<div class="skills-container">
+  <div *ngFor="let skill of skills" class="skill-card">
+    <!-- Usamos una etiqueta <img> para mostrar los iconos en formato PNG -->
+    <img [src]="skill.icon" alt="{{ skill.name }} icon" class="icon">
+    <p>{{ skill.name }}</p>
+  </div>
+</div>
